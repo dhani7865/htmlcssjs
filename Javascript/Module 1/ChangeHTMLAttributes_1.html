@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Can Change Images</h1>
+    
+    <img id="myImage" onclick="changeImage()" src="Bulboff.jpg" width="100" heigt="180">
+    
+    <p>Click the light bulb to turn on/off the light.</p>
+    
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("Bulboff.jpg")) {
+                image.src = "Bulbon.jpg";
+            } else {
+                image.src = "Bulboff.jpg";
+            }
+        }
+    </script>
+    </body>
+</html>

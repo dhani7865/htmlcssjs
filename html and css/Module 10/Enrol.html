@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Enrol page</title>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <!---Creating the Javascript-->
+        <script type="text/Javascript">
+            function calculate() {
+                var course = 0;
+                var uniforms = 0;
+                var total = 0;
+                
+                if (document.getElementById("adult").checked == true) {
+                    course = 50;
+                }
+                else if (document.getElementById("teen").checked) {
+                    course = 100;
+                }
+                else if (document.getElementById("child").checked) {
+                    course = 150;
+                }
+                uniforms = 50 * document.getElementById("uniforms").value;
+                
+                total = course + uniforms;
+                
+                alert("Your total cost is: $" + total); //This produces a concatenated string
+        }
+
+        </script>
+
+    </head>
+    <body>
+
+         <header><img src="media/images/lOGO.png" alt="lOGO" height="150" width="150"></a></header>
+
+
+        <!--- Notice the spacing in your web browser --->
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Classes.html">Classes</a></li>
+            <li><a href="Enrol.html">Enrol</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+<!---Creating a Table-->
+<table>
+    <h2>ENROL!</h2>
+
+    <!---Row 1-->
+    <tr>
+        <td><label for="Firstname">First Name</label></td>
+        <td><input type="text" id="firstname" name="firstname"></td>
+    </tr>
+
+    <!---Row 2-->
+    <tr>
+        <td><label for="lastname">Last Name</label></td>
+        <td><input type="text" id="lastname" name="lastname"></td>
+    </tr>
+
+    <!---Row 3-->
+    <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" id="email" name="email"></td>
+    </tr>
+    
+    <!---Row 4-->
+    <tr>
+        <td><label for="phone">Phone</label></td>
+        <td><input type="tel" id="phone" name="phone"></td>
+    </tr>
+</table>
+
+    <table id="enrollprice">
+        <tr>
+            <td>Adult</td>
+            <td>£50</td>
+            <td><input type="radio" id="adult" value="50"></td>
+        </tr>
+
+        <tr>
+            <td>Teen</td>
+            <td>£100</td>
+            <td><input type="radio" id="teen" value="100"></td>
+        </tr>
+
+        <tr>
+            <td>Child</td>
+            <td>£150</td>
+            <td><input type="radio" id="child" value="150"></td>
+        </tr>
+
+        <tr>
+            <td>Uniforms</td>
+            <td>£50</td>
+            <td><input type="number" id="uniforms" min="0" value="0"></td>
+        </tr>
+    </table>
+
+    <p><input type="submit" id="submit" value="Submit" onclick="calculate()"></p>
+    <input type="reset" id="reset" value="Reset"><br>
+
+</main>
+
+        <footer>
+            <p>Our location: <br>
+                100 town square <br>
+                OL1 2BD <br></p>
+
+        <p>Phone number: <a href="tel:07982871086">(07982871086) 07982871086</a></p>
+        <p>Email Address: <a href="emailto:dh11any@hotmail.com">dh11any@hotmail.com</a></p>
+        </footer>
+    </body>
+</html>

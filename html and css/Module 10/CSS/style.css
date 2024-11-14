@@ -1,0 +1,217 @@
+@import url("mobilestyle.css");
+@import url("tabletstyle.css");
+
+ 
+
+body {
+    background-image: linear-gradient(white,black);
+}
+
+ 
+header img {
+    width: 100%; /*This streches the image across the viewport.*/
+    height: auto; /*The height will change based on the size of the viewport.*/
+    max-width: 500px;
+}
+
+nav {
+    margin-bottom: 1em;
+
+    font-weight: bold;
+    text-align: center;
+
+    /*
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    /* background-color: black;
+    margin-top:-5.3em; /* This moves the nav element above the logo 
+    width: 57%;
+    float: right;
+    text-align: center; /*This floats the nav element to the right
+    border-top: solid 0.2em black;
+    border-bottom: solid 0.2em black;
+    /* max-width: 50%;
+    */
+}
+
+nav ul {
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li {
+    background-color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 0.75em;
+    list-style-type: none; /*this removes bullet points*/
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;/*this removes the underline from the hyperlink*/
+}
+
+figure {
+    /*text-align: center.*/
+    text-align: center;
+    background-color: white;
+}
+
+figure img {
+    max-width: 800px;
+   /*  max-height: 600px; */
+    width: 100%;
+    height: auto;
+}
+
+main {
+    /*background-color: white;
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;*/
+    padding: 1em;
+    background-image: linear-gradient(white,grey);
+    min-height: 500px;
+    border-radius: 1.0em; /*This rounds the corners of elements.*/
+    margin-bottom: 1em; /*This places some space between elements*/
+}
+
+/*This was for our 3 column layout begin. */
+main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ 
+main div .column {
+    float: left;
+}
+
+main div.left {
+    padding: 0.5%;
+    width: 20%;
+    float: left;
+    /*border-right: 3px solid black;*/
+}
+
+main div .right {
+    float: right;
+    padding: 10px;
+    width: 30%;
+}
+
+main div .center {
+    padding: 0.5%;
+    width: 51%;
+
+    border-left: 0.3em solid black; /*This rounds the corners of elements.*/
+    border-right: 0.3em solid black; /*This rounds the corners of elements.*/
+}
+/* Column layout end. */
+
+/* .schedule table begin. */
+.schedule table {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: white;
+}
+
+.schedule caption {
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.schedule th, .schedule td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+/* .schedule table end. */
+
+#enrollprice {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+}
+
+#enrollprice td {
+    border: 0.1em solid black;
+    paddng:0.5em;
+    text-align: center;
+}
+
+/*Footer CSS*/
+footer {
+    background-image: linear-gradient(to right, white,grey);
+    text-align: center;
+    border-radius: 1.0em; /*This rounds the corners of elements.*/
+}
+
+
+/*Begin mobile.*/
+@media screen and (max-width: 640px) {
+    nav ul li {
+        border-radius: 1em;
+    }
+ 
+    .tablet {
+        display: none;
+    }
+ 
+    .desktop {
+        display: none;
+    }
+}
+/*End mobile*/
+
+/*Begin tablet*/
+@media screen and (min-width: 641px) {
+    .desktop {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline-block; /*This lists items horizontally and allows them to stretch*/
+        border-radius: 1em;
+    }
+}
+
+/*End tablet*/
+
+/*Begin desktop*/
+@media screen and (min-width: 961px) {
+    header {
+        background-image: linear-gradient(to right, white,black black black);
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+
+    header img {
+        width: auto;
+        height: 5em;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    nav ul li {
+        max-width: 5%;
+
+    }
+
+    main div .center {
+        padding: 10px;
+        width: 45%;
+        border-left: 0.3em solid black;
+        border-right: 0.3em solid black;
+    }
+}
+/*End Desktop.*/
+
+
+    

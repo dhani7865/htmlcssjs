@@ -1,0 +1,43 @@
+h1 {
+    color: white;
+    background-color: black;
+    font-family: Aerial, "Comic Sans", Calibri;
+    font-size: 3em;
+    text-align: center;  /* This will help you align elements to the center */
+}
+
+h2 {
+    color: white;
+    background-color: red;
+    font-family: Aerial, "Comic Sans", Calibri;
+    font-size: 4em;
+    text-align: center;
+}
+
+
+body {
+    background-color: black;
+}
+
+p {
+    color: white;
+    background-color: black;
+}
+
+#container {
+    color: yellow;
+}
+
+.accent {
+    background-color:yellow;
+    color: black;
+}
+
+body main div {
+    color: white;
+}
+
+footer {
+    background-color: rgb(21, 4, 154);
+    color: #fff9f9;
+}

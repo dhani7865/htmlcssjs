@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Loops page</title>
+        <meta charset="utf-8">
+
+        <script type="text/javascript">
+        
+        function enter() {
+            var aNumber = 1;
+            var aString = "1";
+            var bString = "2";
+            var bNumber = 3;
+            var aBoolean = true;
+            var bNumber = 2;
+
+            while (aNumber < bNumber) {
+                alert("aNumber is less than bNumber.");
+
+                // aNumber = aNumber + 1;
+
+                // Increment
+                aNumber++;
+
+                alert("The value of aMumber in the while loop is now: " + aNumber);                
+            }
+
+            // aNumber--;
+            aNumber = 0;
+
+
+            do {
+                alert("The value of aNumber in the do while loop is: " + aNumber);
+
+                aNumber++;
+                aNumber = aNumber + 2;             
+
+            } while (aNumber < bNumber);
+            alert("You have reached the end of the script");
+
+        }
+        
+        </script>
+        </head>
+        
+        <body>
+            <header>Loops</header>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="datatypes.html">Data Types</a>
+                <a href="globalmethods.html">Global Methods</a>
+                <a href="variables.html">Variables</a>
+                <a href="loops.html">Loops</a>
+            </nav>
+            
+            <main>
+                <input type="submit" id="submit" value="Submit" onClick="enter()">
+            </main>
+            
+            <footer></footer>
+        </body>
+        </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>What can Javascript do?</h1>
+    
+    <img id="myImage" onclick="changeImage()" src="Bulboff.jpg" width="200" height="180">
+    
+    <p id="demo">JavaScript can change HTML content. </p>
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo");
+            x.style.fontSize = "25px";
+            x.style.color = "red";
+        }
+        
+    </script>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    
+    </body>
+</html>
